@@ -1,4 +1,10 @@
+"use-client";
+
+import AuthForm from "@/components/forms/AuthForm";
+
 const SignIn = () => {
-  return <div>SignIn</div>;
+  return (
+    <AuthForm formType="SIGN_IN" defaultValues={{ email: "", password: "" }} />
+  );
 };
 export default SignIn;
